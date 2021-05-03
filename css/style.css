@@ -1,0 +1,112 @@
+/* ANCHOR all common css start  */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.9;
+}
+
+/*  all common css end  */
+
+/* ANCHOR header part start  */
+nav {
+    background: rgba(0, 0, 0, 0.116);
+}
+
+/* sticky header start  */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999999;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.bg {
+    background: rgba(0, 0, 0, 0.808);
+    padding: 10px 0;
+    animation: menu 5s;
+    -webkit-animation: menu 5s;
+}
+
+@keyframes menu {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+/* ANCHOR sticky header end  */
+
+
+nav ul li {
+    padding-left: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 14px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #c7b299;
+    font-size: 18px;
+}
+
+.navbar-toggler-icon {
+    background: blue;
+}
+
+/*  header part end  */
+/* ANCHOR banner part start  */
+#banner {
+    background: url(../images/bannerwaxom.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.banner_overly {
+    background: rgba(17, 17, 17, 0.70);
+    padding-top: 500px;
+    padding-bottom: 500px;
+}
+
+/*  banner part end  */
